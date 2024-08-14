@@ -132,21 +132,31 @@
 </div>
   </div>
   
-  
-<script>
-    document.getElementById('location-btn').addEventListener('click', function() {
+  <script>
+    document.getElementById('location-btn').addEventListener('click', function () {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
+            navigator.geolocation.getCurrentPosition(function (position) {
                 let lat = position.coords.latitude;
                 let lon = position.coords.longitude;
-                document.getElementById('location-btn').textContent = 'Lat: ' + lat + ', Long: ' + lon;
-            }, function(error) {
+                // Nominatim API ko call karo
+                fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`)
+                    .then(response => response.json())
+                    .then(data => {
+                        let cityName = data.address.city || data.address.town || data.address.village || "City not found";
+                        document.getElementById('location-btn').textContent = cityName;
+                    })
+                    .catch(error => {
+                        document.getElementById('location-btn').textContent = 'Error: ' + error.message;
+                    });
+            }, function (error) {
                 document.getElementById('location-btn').textContent = 'Unable to retrieve location. Error: ' + error.message;
             });
         } else {
             document.getElementById('location-btn').textContent = 'Geolocation is not supported by this browser.';
         }
     });
-    </script>
+</script>
+
+  
 </body>
 </html>
