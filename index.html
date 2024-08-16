@@ -42,95 +42,254 @@
     </ul>
   </nav>
   
-  
-  <div class="links">
-    <h1>Try Our Quick Links...»</h1>
-    <br><br>
-    <div class="ready-made">
-      
-      <div class="box">
-    <i class="fa-solid fa-hotel"></i><p>Hotels</p></div>
-      
-      <div class="box">
-    <i class="fa-solid fa-train"></i><p>Trains</p></div>
-      
-      <div class="box">
-      <i class="fa-solid fa-plane-departure"></i><p>Flight</p></div>
-      
-      
-      <div class="box">
-    <i class="fa-solid fa-taxi"></i><p>Taxi</p></div>
-        
-      <div class="box">
-      <i class="fa-solid fa-bus"></i><p>Bus</p></div>
-      
-      
-        <div class="box">
-    <i class="fa-solid fa-motorcycle"></i><p>Bikes</p></div>
-          
-          <div class="box">
-    <i class="fa-solid fa-utensils"></i><p>Foods</p></div>
-            
-            <div class="box">
-    <i class="fa-solid fa-film"></i><p>Movies</p></div>
+  <fieldset>
+    <legend><strong>Quick Hotel Booking</strong></legend>
+  <div class="city-name">
+  <input placeholder="Destination" type="input" list="city" class="city">
+  <datalist id="city">
+ <!-- Tier 1 Cities -->
+<option value="Mumbai"></option>
+<option value="Delhi"></option>
+<option value="New Delhi"></option>
+<option value="Bengaluru"></option>
+<option value="Hyderabad"></option>
+<option value="Chennai"></option>
+<option value="Kolkata"></option>
+<option value="Pune"></option>
+<option value="Ahmedabad"></option>
+
+<!-- Tier 2 Cities -->
+<option value="Jaipur"></option>
+<option value="Lucknow"></option>
+<option value="Kanpur"></option>
+<option value="Nagpur"></option>
+<option value="Indore"></option>
+<option value="Bhopal"></option>
+<option value="Patna"></option>
+<option value="Ludhiana"></option>
+<option value="Coimbatore"></option>
+<option value="Agra"></option>
+<option value="Kochi"></option>
+<option value="Visakhapatnam"></option>
+<option value="Surat"></option>
+<option value="Vadodara"></option>
+<option value="Ranchi"></option>
+<option value="Varanasi"></option>
+<option value="Gurgaon"></option>
+<option value="Noida"></option>
+
+<!-- Tier 3 Cities -->
+<option value="Ajmer"></option>
+<option value="Gwalior"></option>
+<option value="Jabalpur"></option>
+<option value="Udaipur"></option>
+<option value="Kota"></option>
+<option value="Mysore"></option>
+<option value="Jamshedpur"></option>
+<option value="Rajkot"></option>
+<option value="Thiruvananthapuram"></option>
+<option value="Vijayawada"></option>
+<option value="Raipur"></option>
+<option value="Allahabad (Prayagraj)"></option>
+<option value="Bhubaneswar"></option>
+<option value="Ara"></option>
+<option value="Sasaram"></option>
+<option value="Buxar"></option>
+<option value="Haldwani"></option>
+<option value="Pondicherry"></option></datalist></div>
+    
+    <div class="select-date">
+      <p>Select Your Check-In & Check-Out Dates</p>
+    <input type="date" placeholder="Check-In" class="date">
+    <input type="date" placeholder="Check-Out" class="date">
+    
+  </div>
+    <div class="people-count">
+      <p>Guest & Room</p>
+      <input placeholder="No. of Guest, room">
     </div>
-  </div>
-  <br><br><br><br>
-  
-  <div class="Packages">
-    <h1>Packages as per your wish...»</h1>
-    <br><br>
-    <div class="ready-made">
-      
-    <div class="box">
-      <i class="fa-solid fa-gopuram"></i><p>Temples</p></div>
-    
-    <div class="box">
-    <i class="fa-solid fa-umbrella-beach"></i><p>Beaches</p></div>
-    
-      <div class="box">
-    <i class="fa-solid fa-person-swimming"></i><p>Rafting</p></div>
-    
-        <div class="box">
-    <i class="fa-solid fa-person-hiking"></i><p>Hiking</p></div>
-    
-      <div class="box">
-      <i class="fa-solid fa-champagne-glasses"></i><p>Clubbing</p></div>
-    
-    <div class="box">
-    <i class="fa-solid fa-drum"></i><p>Discos</p></div>
+    <div class="room-type">
+      <p>Choose Your Room Type</p>
+      <input placeholder="Room Type" list="type">
+      <datalist id="type">
+        <option value="Standard(₹700-900)"></option>
+        <option value="Premium (₹1200-1500)"></option>
+        <option value="Suit Rooms (₹2000-2500)"></option>
     </div>
+    
+    <div class="S-btn"><button type="search" class="search-btn">Search</button></div>
+    
+    <br>
+    
+  </fieldset>
+  <br><br><br><br>
+    
+    
+    
+    <fieldset>
+    <legend><strong>Book Rental Bus/Taxi</strong></legend>
+  <div class="bus/taxi">
+  <input placeholder="Pick-Up Location" type="input" list="city" class="city">
+    <div><i class="fa-solid fa-angles-down"></i></div>
+    <input placeholder="Drop Location" type="input" list="city" class="city">
+  <datalist id="city">
+ <!-- Tier 1 Cities -->
+<option value="Mumbai"></option>
+<option value="Delhi"></option>
+<option value="New Delhi"></option>
+<option value="Bengaluru"></option>
+<option value="Hyderabad"></option>
+<option value="Chennai"></option>
+<option value="Kolkata"></option>
+<option value="Pune"></option>
+<option value="Ahmedabad"></option>
+
+<!-- Tier 2 Cities -->
+<option value="Jaipur"></option>
+<option value="Lucknow"></option>
+<option value="Kanpur"></option>
+<option value="Nagpur"></option>
+<option value="Indore"></option>
+<option value="Bhopal"></option>
+<option value="Patna"></option>
+<option value="Ludhiana"></option>
+<option value="Coimbatore"></option>
+<option value="Agra"></option>
+<option value="Kochi"></option>
+<option value="Visakhapatnam"></option>
+<option value="Surat"></option>
+<option value="Vadodara"></option>
+<option value="Ranchi"></option>
+<option value="Varanasi"></option>
+<option value="Gurgaon"></option>
+<option value="Noida"></option>
+
+<!-- Tier 3 Cities -->
+<option value="Ajmer"></option>
+<option value="Gwalior"></option>
+<option value="Jabalpur"></option>
+<option value="Udaipur"></option>
+<option value="Kota"></option>
+<option value="Mysore"></option>
+<option value="Jamshedpur"></option>
+<option value="Rajkot"></option>
+<option value="Thiruvananthapuram"></option>
+<option value="Vijayawada"></option>
+<option value="Raipur"></option>
+<option value="Allahabad (Prayagraj)"></option>
+<option value="Bhubaneswar"></option>
+<option value="Ara"></option>
+<option value="Sasaram"></option>
+<option value="Buxar"></option>
+<option value="Haldwani"></option>
+<option value="Pondicherry"></option></datalist></div>
+    
+    <div class="select-date">
+      <p>Select Your Booking Dates</p>
+    <input type="date" placeholder="booking-date" class="date">
+    
   </div>
+    
+    <div class="vehical-type">
+      <p>Choose Your Vehical Type</p>
+      <input placeholder="Vehical Type" list="v-type">
+      <datalist id="v-type">
+        <option value="Bike"></option>
+        <option value="Taxi"></option>
+        <option value="Bus"></option>
+    </div>
+    
+    <div class="S-btn"><button type="search" class="search-btn">Search</button></div>
+    
+    <br>
+    
+  </fieldset>
   <br><br><br><br>
   
-  
-  <div class="payments">
-    <h1>Banking and UPI Payments...»</h1>
-    <br><br>
-    <div class="ready-made">
-      
-    <div class="box">
-      <i class="fa-solid fa-id-card"></i><p>Contacts</p></div>
-      
-      <div class="box">
-      <i class="fa-solid fa-qrcode"></i></i><p>Scan&Pay</p></div>
+  <fieldset>
+    <legend><strong>Book Train Tickets</strong></legend>
+  <div class="train">
+  <input placeholder="From Station" type="input" list="station" class="city">
+    <div><i class="fa-solid fa-angles-down"></i></div>
+    <input placeholder="To Station" type="input" list="station" class="city">
+  <datalist id="station">
+    <!-- Tier 1 Cities -->
+<option value="Mumbai-CSTM"></option>
+<option value="Delhi-NDLS"></option>
+<option value="Bengaluru-SBC"></option>
+<option value="Hyderabad-HYB"></option>
+<option value="Chennai-MAS"></option>
+<option value="Kolkata-HWH"></option>
+<option value="Pune-PUNE"></option>
+<option value="Ahmedabad-ADI"></option>
+
+<!-- Tier 2 Cities -->
+<option value="Jaipur-JP"></option>
+<option value="Lucknow-LKO"></option>
+<option value="Kanpur-CNB"></option>
+<option value="Nagpur-NGP"></option>
+<option value="Indore-INDB"></option>
+<option value="Bhopal-BPL"></option>
+<option value="Patna-PNBE"></option>
+<option value="Ludhiana-LDH"></option>
+<option value="Coimbatore-CBE"></option>
+<option value="Agra-AGC"></option>
+<option value="Kochi-ERS"></option>
+<option value="Visakhapatnam-VSKP"></option>
+<option value="Surat-ST"></option>
+<option value="Vadodara-BRC"></option>
+<option value="Ranchi-RNC"></option>
+<option value="Varanasi-BSB"></option>
+<option value="Gurgaon-GGN"></option>
+<option value="Noida-NOIDA"></option> <!-- Noida shares railway services with Delhi, usually coded as NDLS -->
+
+<!-- Tier 3 Cities -->
+<option value="Ajmer-AII"></option>
+<option value="Gwalior-GWL"></option>
+<option value="Jabalpur-JBP"></option>
+<option value="Udaipur-UDZ"></option>
+<option value="Kota-KOTA"></option>
+<option value="Mysore-MYS"></option>
+<option value="Jamshedpur-TATA"></option>
+<option value="Rajkot-RJT"></option>
+<option value="Thiruvananthapuram-TVC"></option>
+<option value="Vijayawada-BZA"></option>
+<option value="Raipur-R"></option>
+<option value="Allahabad (Prayagraj)-PRYJ"></option>
+<option value="Bhubaneswar-BBS"></option>
+<option value="Ara-ARA"></option>
+<option value="Sasaram-SSM"></option>
+<option value="Buxar-BXR"></option>
+<option value="Haldwani-HLW"></option>
+<option value="Pondicherry-PDY"></option></datalist></div>
     
-    <div class="box">
-    <i class="fa-solid fa-building-columns"></i><p>Banks/UPI</p></div>
+    <div class="select-date">
+      <p>Select Your Booking Dates</p>
+    <input type="date" placeholder="booking-date" class="date">
     
-      <div class="box">
-        <i class="fa-solid fa-repeat"></i><p>Self</p></div>
-      
-      <div class="box">
-      <i class="fa-solid fa-wallet"></i><p>Wallet</p></div>
-    
-    <div class="box">
-      <i class="fa-solid fa-car-burst"></i><p>Insurance</p></div>
-    
-    <div class="box">
-    <i class="fa-solid fa-money-bill-trend-up"></i><p>Invest</p></div>
   </div>
+    
+    <div class="class-type">
+      <p>Choose Your Class Type</p>
+      <input placeholder="Choose Class" list="c-type">
+      <datalist id="c-type">
+        <option value="1A-First AC"></option>
+<option value="2A-Second AC"></option>
+<option value="3A-Third AC"></option>
+<option value="CC-AC Chair Car"></option>
+<option value="SL-Sleeper Class"></option>
+<option value="2S-Second Seating"></option>
+<option value="EC-Executive Class"></option>
+<option value="GN-General Unreserved"></option>
+    </div>
+    
+    <div class="S-btn"><button type="search" class="search-btn">Search</button></div>
+    
+    <br>
+    
+  </fieldset>
   <br><br><br><br>
+  
   
   
   <div class="footer">
