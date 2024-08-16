@@ -73,6 +73,45 @@
   color: white;
   background-color: slategrey;
 }
+fieldset{
+  text-align: center;
+  font-size: 2rem;
+  color: slategrey;
+  margin: 20px;
+  min-height: 300px;
+  border-radius: 70px;
+}
+input{
+  color: slategrey;
+  font-size: 2rem;
+  text-align: center;
+  min-width: 40%;
+  min-height: 70px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.date{
+  background-color: white;
+  color: slategrey;
+}
+input .placeholder{
+  margin: 20px;
+}
+input p{
+  text-align: center
+}
+.search-btn{
+  color: slategrey;
+  background-color: white;
+  font-size: 2rem;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+}
+.search-btn:hover{
+  color: white;
+  background-color: slategrey;
+}
 nav{
   background-color: slategrey;
   height: 120px;
